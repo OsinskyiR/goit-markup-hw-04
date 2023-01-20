@@ -166,7 +166,11 @@ button {
 .section-hero {
   padding-top: 192px;
   padding-bottom: 192px;
-  background-color: var(--background-color);
+  background-image: linear-gradient(#2e2f42b2, #2e2f42b2),
+    url(../images/bg/people-office.jpg);
+  background-size: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -284,8 +288,77 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--sekond-color);
+}
+
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
+}
+
+/* =================CUSTOMERS================== */
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-link-icon {
+  fill: #8e8f99;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+}
+
+.customers-link:hover .customers-link-icon,
+.customers-link:focus .customers-link-icon {
+  fill: #404bbf;
+}
 
 /* =================GALLERY-WORKS================== */
+
 .button-gallery-works {
   padding-top: 96px;
   padding-bottom: 152px;
@@ -310,7 +383,22 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.gallry-works-link:hover .gallery-works-description {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 /* =================FOOTER================== */
+.footer {
+  background-color: var(--background-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
 
 .footer-logo {
   font-size: 18px;
@@ -323,13 +411,42 @@ button {
   line-height: 1.17;
 }
 
-.footer {
-  background-color: var(--background-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 .footer-subtitle {
   color: #e7e9fc;
   margin-top: 16px;
   max-width: 264px;
+}
+
+.social-list-titile {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.social-list-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 16px;
+}
+
+.social-list-footer-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-footer-icon {
+  fill: #f4f4fd;
+}
+
+.social-list-footer-link:hover,
+.social-list-footer-link:focus {
+  background-color: #31d0aa;
 }
