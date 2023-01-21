@@ -242,6 +242,31 @@ button {
 }
 
 /* =================ABOUT================== */
+.decor-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.decor-item {
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+
+.decor-link-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #F4F4FD;
+  border-radius: 4px; */
+}
+
 .about {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -250,6 +275,9 @@ button {
 .about-list {
   display: flex;
   gap: 24px;
+}
+.abaut-item {
+  max-width: 264px;
 }
 
 /* =================GALLERY-ABOUT================== */
@@ -440,7 +468,6 @@ button {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  h
 }
 
 .social-list-footer-icon {
